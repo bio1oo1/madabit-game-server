@@ -1,0 +1,38 @@
+{
+  "name": "Madabit-Game-Server",
+  "version": "1.0.0",
+  "engines": {
+    "node": "~0.10.32"
+  },
+  "dependencies": {
+    "CBuffer": "~0.1.4",
+    "async": "~0.8.0",
+    "better-assert": "~1.0.0",
+    "binary-search": "^1.2.0",
+    "check-ip": "^1.1.1",
+    "debug": "^2.2.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "ip": "^1.1.5",
+    "lodash": "~2.4.1",
+    "node-uglifier": "^0.5.41",
+    "nodemon": "^1.14.11",
+    "pg": "~3.3.0",
+    "public-ip": "^2.4.0",
+    "socket.io": "~1.2.0",
+    "uuid": "^2.0.1"
+  },
+  "scripts": {
+    "start-dev": "nodemon server.js --use_strict",
+    "start": "node %NODE_DEBUG_OPTION% server.js --use_strict"
+  },
+  "scripts-old": {
+    "start-dev": "env $(cat .env | xargs) nodemon server.js --use_strict",
+    "start": "node %NODE_DEBUG_OPTION% server.js --use_strict"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
